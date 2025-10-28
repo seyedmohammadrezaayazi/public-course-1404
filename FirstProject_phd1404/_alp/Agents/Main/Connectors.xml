@@ -144,7 +144,7 @@
 		<SourceEmbeddedObjectReference>
 			<PackageName>firstproject_phd1404</PackageName>
 			<ClassName>Main</ClassName>
-			<ItemName>sink</ItemName>
+			<ItemName>sinkPay</ItemName>
 		</SourceEmbeddedObjectReference>
 		<SourceConnectableItemReference>
 			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
@@ -316,7 +316,7 @@
 		<SourceEmbeddedObjectReference>
 			<PackageName>firstproject_phd1404</PackageName>
 			<ClassName>Main</ClassName>
-			<ItemName>sink1</ItemName>
+			<ItemName>sinkNotPay</ItemName>
 		</SourceEmbeddedObjectReference>
 		<SourceConnectableItemReference>
 			<PackageName>com.anylogic.libraries.processmodeling</PackageName>

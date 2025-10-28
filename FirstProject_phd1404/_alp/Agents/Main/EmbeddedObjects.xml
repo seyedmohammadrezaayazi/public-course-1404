@@ -206,7 +206,7 @@
 	</EmbeddedObject>
 	<EmbeddedObject>
 		<Id>1761061062777</Id>
-		<Name><![CDATA[sink]]></Name>
+		<Name><![CDATA[sinkPay]]></Name>
 		<X>1180</X>
 		<Y>350</Y>
 		<Label>
@@ -1305,7 +1305,7 @@
 	</EmbeddedObject>
 	<EmbeddedObject>
 		<Id>1761663690721</Id>
-		<Name><![CDATA[sink1]]></Name>
+		<Name><![CDATA[sinkNotPay]]></Name>
 		<X>840</X>
 		<Y>440</Y>
 		<Label>
