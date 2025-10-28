@@ -1306,7 +1306,7 @@
 	<EmbeddedObject>
 		<Id>1761663690721</Id>
 		<Name><![CDATA[sinkNotPay]]></Name>
-		<X>840</X>
+		<X>920</X>
 		<Y>440</Y>
 		<Label>
 			<X>-15</X>
@@ -1496,6 +1496,177 @@
 		<InitializationType>SPECIFIED_NUMBER</InitializationType>
 		<InitializationDatabaseTableQuery>
 			<Id>1761663702933</Id>
+			<TableReference/>
+		</InitializationDatabaseTableQuery>
+		<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+		<QuantityColumn/>
+	</EmbeddedObject>
+	<EmbeddedObject>
+		<Id>1761665146879</Id>
+		<Name><![CDATA[timeMeasureStart]]></Name>
+		<X>170</X>
+		<Y>340</Y>
+		<Label>
+			<X>-75</X>
+			<Y>-65</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<ActiveObjectClass>
+			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+			<ClassName>TimeMeasureStart</ClassName>
+		</ActiveObjectClass>
+		<GenericParameterSubstitute>
+			<GenericParameterSubstituteReference>
+				<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+				<ClassName>TimeMeasureStart</ClassName>
+				<ItemName>1412336243204</ItemName>
+			</GenericParameterSubstituteReference>
+		</GenericParameterSubstitute>
+		<Parameters>
+			<Parameter>
+				<Name><![CDATA[onEnter]]></Name>
+			</Parameter>
+		</Parameters>
+		<ReplicationFlag>false</ReplicationFlag>
+		<Replication Class="CodeValue">
+			<Code><![CDATA[100]]></Code>
+		</Replication>
+		<CollectionType>ARRAY_LIST_BASED</CollectionType>
+		<InitialLocationType>XYZ</InitialLocationType>
+		<ColumnCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</ColumnCode>
+		<RowCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</RowCode>
+		<LocationNameCode Class="CodeValue">
+			<Code><![CDATA[""]]></Code>
+		</LocationNameCode>
+		<InitializationType>SPECIFIED_NUMBER</InitializationType>
+		<InitializationDatabaseTableQuery>
+			<Id>1761665146877</Id>
+			<TableReference/>
+		</InitializationDatabaseTableQuery>
+		<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+		<QuantityColumn/>
+	</EmbeddedObject>
+	<EmbeddedObject>
+		<Id>1761665158198</Id>
+		<Name><![CDATA[timeMeasureEnd]]></Name>
+		<X>1100</X>
+		<Y>340</Y>
+		<Label>
+			<X>-60</X>
+			<Y>-90</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<ActiveObjectClass>
+			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+			<ClassName>TimeMeasureEnd</ClassName>
+		</ActiveObjectClass>
+		<GenericParameterSubstitute>
+			<GenericParameterSubstituteReference>
+				<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+				<ClassName>TimeMeasureEnd</ClassName>
+				<ItemName>1412336243203</ItemName>
+			</GenericParameterSubstituteReference>
+		</GenericParameterSubstitute>
+		<Parameters>
+			<Parameter>
+				<Name><![CDATA[startObjects]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[{ timeMeasureStart }]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[datasetCapacity]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onEnter]]></Name>
+			</Parameter>
+		</Parameters>
+		<ReplicationFlag>false</ReplicationFlag>
+		<Replication Class="CodeValue">
+			<Code><![CDATA[100]]></Code>
+		</Replication>
+		<CollectionType>ARRAY_LIST_BASED</CollectionType>
+		<InitialLocationType>XYZ</InitialLocationType>
+		<ColumnCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</ColumnCode>
+		<RowCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</RowCode>
+		<LocationNameCode Class="CodeValue">
+			<Code><![CDATA[""]]></Code>
+		</LocationNameCode>
+		<InitializationType>SPECIFIED_NUMBER</InitializationType>
+		<InitializationDatabaseTableQuery>
+			<Id>1761665158196</Id>
+			<TableReference/>
+		</InitializationDatabaseTableQuery>
+		<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+		<QuantityColumn/>
+	</EmbeddedObject>
+	<EmbeddedObject>
+		<Id>1761665201031</Id>
+		<Name><![CDATA[timeMeasureEnd1]]></Name>
+		<X>810</X>
+		<Y>430</Y>
+		<Label>
+			<X>-65</X>
+			<Y>-20</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<ActiveObjectClass>
+			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+			<ClassName>TimeMeasureEnd</ClassName>
+		</ActiveObjectClass>
+		<GenericParameterSubstitute>
+			<GenericParameterSubstituteReference>
+				<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+				<ClassName>TimeMeasureEnd</ClassName>
+				<ItemName>1412336243203</ItemName>
+			</GenericParameterSubstituteReference>
+		</GenericParameterSubstitute>
+		<Parameters>
+			<Parameter>
+				<Name><![CDATA[startObjects]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[{ timeMeasureStart }]]></Code>
+				</Value>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[datasetCapacity]]></Name>
+			</Parameter>
+			<Parameter>
+				<Name><![CDATA[onEnter]]></Name>
+			</Parameter>
+		</Parameters>
+		<ReplicationFlag>false</ReplicationFlag>
+		<Replication Class="CodeValue">
+			<Code><![CDATA[100]]></Code>
+		</Replication>
+		<CollectionType>ARRAY_LIST_BASED</CollectionType>
+		<InitialLocationType>XYZ</InitialLocationType>
+		<ColumnCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</ColumnCode>
+		<RowCode Class="CodeValue">
+			<Code><![CDATA[0]]></Code>
+		</RowCode>
+		<LocationNameCode Class="CodeValue">
+			<Code><![CDATA[""]]></Code>
+		</LocationNameCode>
+		<InitializationType>SPECIFIED_NUMBER</InitializationType>
+		<InitializationDatabaseTableQuery>
+			<Id>1761665201029</Id>
 			<TableReference/>
 		</InitializationDatabaseTableQuery>
 		<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
