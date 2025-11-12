@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Presentation>
+	<Control Type="EditBox">
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Id>1762958804137</Id>
+		<Name><![CDATA[editbox]]></Name>
+		<X>210</X>
+		<Y>140</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<BasicProperties Width="100" Height="30">
+			<EmbeddedIcon>false</EmbeddedIcon>
+			<FillColor>-1</FillColor>
+			<TextColor>-16777216</TextColor>
+			<Enabled>true</Enabled>
+		</BasicProperties>
+		<ExtendedProperties>
+			<Font Name="Dialog" Size="11" Style="0"/>
+			<LinkTo>true</LinkTo>
+			<Link>a</Link>
+		</ExtendedProperties>
+	</Control>
+	<Control Type="EditBox">
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Id>1762958806573</Id>
+		<Name><![CDATA[editbox1]]></Name>
+		<X>410</X>
+		<Y>140</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<BasicProperties Width="100" Height="30">
+			<EmbeddedIcon>false</EmbeddedIcon>
+			<FillColor>-1</FillColor>
+			<TextColor>-16777216</TextColor>
+			<Enabled>true</Enabled>
+		</BasicProperties>
+		<ExtendedProperties>
+			<Font Name="Dialog" Size="11" Style="0"/>
+			<LinkTo>true</LinkTo>
+			<Link>b</Link>
+		</ExtendedProperties>
+	</Control>
+	<Control Type="EditBox">
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Id>1762958809528</Id>
+		<Name><![CDATA[editbox2]]></Name>
+		<X>570</X>
+		<Y>140</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<BasicProperties Width="100" Height="30">
+			<EmbeddedIcon>false</EmbeddedIcon>
+			<FillColor>-1</FillColor>
+			<TextColor>-16777216</TextColor>
+			<Enabled>true</Enabled>
+		</BasicProperties>
+		<ExtendedProperties>
+			<Font Name="Dialog" Size="11" Style="0"/>
+			<LinkTo>true</LinkTo>
+			<Link>c</Link>
+		</ExtendedProperties>
+	</Control>
+	<Control Type="Button">
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Id>1762959053303</Id>
+		<Name><![CDATA[button]]></Name>
+		<X>400</X>
+		<Y>240</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<BasicProperties Width="100" Height="30">
+			<EmbeddedIcon>false</EmbeddedIcon>
+			<TextColor>-16777216</TextColor>
+			<Enabled>true</Enabled>
+			<ActionCode>if(a==0){
+	traceln("معادله درجه ۱ است");
+}else{
+	double delta=(b*b) - (4*a*c);
+	
+	//traceln(delta);
+	if(delta&lt;0){
+		traceln("no answer");
+	}else{
+		delta=sqrt(delta);
+		double x1=(-b+delta)/(2*a);
+		double x2=(-b-delta)/(2*a);
+		traceln("answer is : " + x1);
+		traceln("answer is : " + x2);
+	}
+}</ActionCode>
+		</BasicProperties>
+		<ExtendedProperties>
+			<Font Name="Dialog" Size="11" Style="0"/>
+			<LabelText>calculator</LabelText>
+		</ExtendedProperties>
+	</Control>
+	<Control Type="Button">
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Id>1762959983816</Id>
+		<Name><![CDATA[button1]]></Name>
+		<X>960</X>
+		<Y>240</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<BasicProperties Width="200" Height="30">
+			<EmbeddedIcon>false</EmbeddedIcon>
+			<TextColor>-16777216</TextColor>
+			<Enabled>true</Enabled>
+			<ActionCode>int i=1;
+double result=1;
+while(i&lt;N+1){
+	result*=i;
+	i++;
+}
+traceln("answer is : "+result);</ActionCode>
+		</BasicProperties>
+		<ExtendedProperties>
+			<Font Name="Dialog" Size="11" Style="0"/>
+			<LabelText>factorial  while</LabelText>
+		</ExtendedProperties>
+	</Control>
+	<Control Type="EditBox">
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Id>1762960023146</Id>
+		<Name><![CDATA[editbox3]]></Name>
+		<X>1020</X>
+		<Y>130</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<BasicProperties Width="100" Height="30">
+			<EmbeddedIcon>false</EmbeddedIcon>
+			<FillColor>-1</FillColor>
+			<TextColor>-16777216</TextColor>
+			<Enabled>true</Enabled>
+		</BasicProperties>
+		<ExtendedProperties>
+			<Font Name="Dialog" Size="11" Style="0"/>
+			<LinkTo>true</LinkTo>
+			<Link>N</Link>
+		</ExtendedProperties>
+	</Control>
+	<Control Type="Button">
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Id>1762960358234</Id>
+		<Name><![CDATA[button2]]></Name>
+		<X>1220</X>
+		<Y>240</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<BasicProperties Width="200" Height="30">
+			<EmbeddedIcon>false</EmbeddedIcon>
+			<TextColor>-16777216</TextColor>
+			<Enabled>true</Enabled>
+			<ActionCode>double result=1;
+for(int i=1;i&lt;N+1;i++){
+	result*=i;
+}
+traceln("answer is : "+result);</ActionCode>
+		</BasicProperties>
+		<ExtendedProperties>
+			<Font Name="Dialog" Size="11" Style="0"/>
+			<LabelText>factorial  while</LabelText>
+		</ExtendedProperties>
+	</Control>
+	<Control Type="CheckBox">
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Id>1762960635849</Id>
+		<Name><![CDATA[checkbox]]></Name>
+		<X>340</X>
+		<Y>320</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<BasicProperties Width="100" Height="30">
+			<EmbeddedIcon>false</EmbeddedIcon>
+			<TextColor>-16777216</TextColor>
+			<Enabled>true</Enabled>
+		</BasicProperties>
+		<ExtendedProperties>
+			<Font Name="Dialog" Size="11" Style="0"/>
+			<LabelText>checkbox</LabelText>
+			<LinkTo>true</LinkTo>
+			<Link>bool1</Link>
+		</ExtendedProperties>
+	</Control>
+	<Control Type="CheckBox">
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Id>1762960638593</Id>
+		<Name><![CDATA[checkbox1]]></Name>
+		<X>340</X>
+		<Y>370</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<BasicProperties Width="100" Height="30">
+			<EmbeddedIcon>false</EmbeddedIcon>
+			<TextColor>-16777216</TextColor>
+			<Enabled>true</Enabled>
+		</BasicProperties>
+		<ExtendedProperties>
+			<Font Name="Dialog" Size="11" Style="0"/>
+			<LabelText>checkbox</LabelText>
+			<LinkTo>true</LinkTo>
+			<Link>bool2</Link>
+		</ExtendedProperties>
+	</Control>
+	<Control Type="CheckBox">
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Id>1762960715065</Id>
+		<Name><![CDATA[checkbox2]]></Name>
+		<X>690</X>
+		<Y>340</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<BasicProperties Width="100" Height="30">
+			<EmbeddedIcon>false</EmbeddedIcon>
+			<TextColor>-16777216</TextColor>
+			<Enabled>true</Enabled>
+		</BasicProperties>
+		<ExtendedProperties>
+			<Font Name="Dialog" Size="11" Style="0"/>
+			<LabelText>checkbox</LabelText>
+			<LinkTo>true</LinkTo>
+			<Link>resultBool</Link>
+		</ExtendedProperties>
+	</Control>
+	<Control Type="Button">
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Id>1762960723682</Id>
+		<Name><![CDATA[button3]]></Name>
+		<X>500</X>
+		<Y>410</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<BasicProperties Width="100" Height="30">
+			<EmbeddedIcon>false</EmbeddedIcon>
+			<TextColor>-16777216</TextColor>
+			<Enabled>true</Enabled>
+			<ActionCode>resultBool=bool1&amp;bool2;
+checkbox2.setValueToDefault();</ActionCode>
+		</BasicProperties>
+		<ExtendedProperties>
+			<Font Name="Dialog" Size="11" Style="0"/>
+			<LabelText>and</LabelText>
+		</ExtendedProperties>
+	</Control>
+	<Control Type="Button">
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Id>1762960733145</Id>
+		<Name><![CDATA[button4]]></Name>
+		<X>500</X>
+		<Y>470</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<BasicProperties Width="100" Height="30">
+			<EmbeddedIcon>false</EmbeddedIcon>
+			<TextColor>-16777216</TextColor>
+			<Enabled>true</Enabled>
+			<ActionCode>resultBool=bool1||bool2;
+checkbox2.setValueToDefault();</ActionCode>
+		</BasicProperties>
+		<ExtendedProperties>
+			<Font Name="Dialog" Size="11" Style="0"/>
+			<LabelText>or</LabelText>
+		</ExtendedProperties>
+	</Control>
+</Presentation>
