@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ActiveObjectClass>
-	<Id>1767106765300</Id>
-	<Name><![CDATA[Main]]></Name>
+	<Id>1767108554696</Id>
+	<Name><![CDATA[LineService]]></Name>
 	<Generic>false</Generic>
 	<GenericParameter>
-		<Id>1767106765305</Id>
-		<Name><![CDATA[1767106765305]]></Name>
+		<Id>1767108554701</Id>
+		<Name><![CDATA[1767108554701]]></Name>
 		<GenericParameterValue Class="CodeValue">
 			<Code><![CDATA[T extends Agent]]></Code>
 		</GenericParameterValue>
@@ -62,7 +62,7 @@
 	</EnvironmentProperties>
 	<DatasetsCreationProperties>
 		<AutoCreate>true</AutoCreate>
-		<Id>1767106765299</Id>
+		<Id>1767108554695</Id>
 		<OccurrenceAtTime>true</OccurrenceAtTime>
 		<OccurrenceDate>1767168000000</OccurrenceDate>
 		<OccurrenceTime Class="CodeUnitValue">
@@ -75,7 +75,7 @@
 		</RecurrenceCode>
 	</DatasetsCreationProperties>
 	<ScaleRuler>
-		<Id>1767106765303</Id>
+		<Id>1767108554699</Id>
 		<Name><![CDATA[scale]]></Name>
 		<X>0</X>
 		<Y>-150</Y>
@@ -91,12 +91,11 @@
 		<Scale>10</Scale>
 		<InheritedFromParentAgentType>true</InheritedFromParentAgentType>
 	</ScaleRuler>
-	<CurrentLevel>1767106765306</CurrentLevel>
-	<ConnectionsId>1767106765301</ConnectionsId>
-	<Functions xmlns:al="http://anylogic.com"/>
+	<CurrentLevel>1767108554702</CurrentLevel>
+	<ConnectionsId>1767108554697</ConnectionsId>
 	<AgentLinks>
 		<AgentLink>
-			<Id>1767106765301</Id>
+			<Id>1767108554697</Id>
 			<Name><![CDATA[connections]]></Name>
 			<X>50</X>
 			<Y>-50</Y>
@@ -119,10 +118,29 @@
 			<LineArrowPosition>END</LineArrowPosition>
 		</AgentLink>
 	</AgentLinks>
+	<ContainerLinks>
+		<ContainerLink>
+			<Id>1767108554853</Id>
+			<Name><![CDATA[main]]></Name>
+			<X>50</X>
+			<Y>-100</Y>
+			<Label>
+				<X>10</X>
+				<Y>0</Y>
+			</Label>
+			<PublicFlag>false</PublicFlag>
+			<PresentationFlag>true</PresentationFlag>
+			<ShowLabel>true</ShowLabel>
+			<ActiveObjectClass>
+				<PackageName>hybrid</PackageName>
+				<ClassName>Main</ClassName>
+			</ActiveObjectClass>
+		</ContainerLink>
+	</ContainerLinks>
 	<EmbeddedObjects xmlns:al="http://anylogic.com"/>
 	<Presentation>
 		<Level>
-			<Id>1767106765306</Id>
+			<Id>1767108554702</Id>
 			<Name><![CDATA[level]]></Name>
 			<X>0</X>
 			<Y>0</Y>
