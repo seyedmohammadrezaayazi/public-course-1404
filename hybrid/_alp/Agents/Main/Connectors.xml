@@ -3,6 +3,7 @@
 	<Connector>
 		<Id>1767106835002</Id>
 		<Name><![CDATA[connector1]]></Name>
+		<ExcludeFromBuild>true</ExcludeFromBuild>
 		<X>330</X>
 		<Y>220</Y>
 		<Label>
@@ -46,6 +47,7 @@
 	<Connector>
 		<Id>1767106843872</Id>
 		<Name><![CDATA[connector]]></Name>
+		<ExcludeFromBuild>true</ExcludeFromBuild>
 		<X>0</X>
 		<Y>0</Y>
 		<Label>
@@ -89,6 +91,7 @@
 	<Connector>
 		<Id>1767106843874</Id>
 		<Name><![CDATA[connector2]]></Name>
+		<ExcludeFromBuild>true</ExcludeFromBuild>
 		<X>0</X>
 		<Y>0</Y>
 		<Label>
@@ -132,6 +135,7 @@
 	<Connector>
 		<Id>1767107100556</Id>
 		<Name><![CDATA[connector3]]></Name>
+		<ExcludeFromBuild>true</ExcludeFromBuild>
 		<X>10</X>
 		<Y>120</Y>
 		<Label>
@@ -175,6 +179,7 @@
 	<Connector>
 		<Id>1767107100558</Id>
 		<Name><![CDATA[connector4]]></Name>
+		<ExcludeFromBuild>true</ExcludeFromBuild>
 		<X>10</X>
 		<Y>120</Y>
 		<Label>
@@ -218,6 +223,7 @@
 	<Connector>
 		<Id>1767107154596</Id>
 		<Name><![CDATA[connector5]]></Name>
+		<ExcludeFromBuild>true</ExcludeFromBuild>
 		<X>350</X>
 		<Y>220</Y>
 		<Label>
@@ -261,6 +267,7 @@
 	<Connector>
 		<Id>1767107263745</Id>
 		<Name><![CDATA[connector7]]></Name>
+		<ExcludeFromBuild>true</ExcludeFromBuild>
 		<X>10</X>
 		<Y>250</Y>
 		<Label>
@@ -304,6 +311,7 @@
 	<Connector>
 		<Id>1767107263747</Id>
 		<Name><![CDATA[connector8]]></Name>
+		<ExcludeFromBuild>true</ExcludeFromBuild>
 		<X>10</X>
 		<Y>250</Y>
 		<Label>
@@ -347,6 +355,7 @@
 	<Connector>
 		<Id>1767107292658</Id>
 		<Name><![CDATA[connector6]]></Name>
+		<ExcludeFromBuild>true</ExcludeFromBuild>
 		<X>340</X>
 		<Y>230</Y>
 		<Label>
@@ -394,6 +403,7 @@
 	<Connector>
 		<Id>1767107292660</Id>
 		<Name><![CDATA[connector9]]></Name>
+		<ExcludeFromBuild>true</ExcludeFromBuild>
 		<X>380</X>
 		<Y>340</Y>
 		<Label>
@@ -441,6 +451,7 @@
 	<Connector>
 		<Id>1767107301043</Id>
 		<Name><![CDATA[connector10]]></Name>
+		<ExcludeFromBuild>true</ExcludeFromBuild>
 		<X>370</X>
 		<Y>350</Y>
 		<Label>
@@ -482,6 +493,452 @@
 			<Point>
 				<X>80</X>
 				<Y>120</Y>
+			</Point>
+		</Points>
+	</Connector>
+	<Connector>
+		<Id>1767107526968</Id>
+		<Name><![CDATA[connector12]]></Name>
+		<X>600</X>
+		<Y>440</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<SourceEmbeddedObjectReference>
+			<PackageName>hybrid</PackageName>
+			<ClassName>Main</ClassName>
+			<ItemName>sink3</ItemName>
+		</SourceEmbeddedObjectReference>
+		<SourceConnectableItemReference>
+			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+			<ClassName>Sink</ClassName>
+			<ItemName>in</ItemName>
+		</SourceConnectableItemReference>
+		<TargetEmbeddedObjectReference>
+			<PackageName>hybrid</PackageName>
+			<ClassName>Main</ClassName>
+			<ItemName>payment2</ItemName>
+		</TargetEmbeddedObjectReference>
+		<TargetConnectableItemReference>
+			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+			<ClassName>Delay</ClassName>
+			<ItemName>out</ItemName>
+		</TargetConnectableItemReference>
+		<Points>
+			<Point>
+				<X>880</X>
+				<Y>220</Y>
+			</Point>
+			<Point>
+				<X>660</X>
+				<Y>220</Y>
+			</Point>
+		</Points>
+	</Connector>
+	<Connector>
+		<Id>1767107526970</Id>
+		<Name><![CDATA[connector13]]></Name>
+		<X>600</X>
+		<Y>440</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<SourceEmbeddedObjectReference>
+			<PackageName>hybrid</PackageName>
+			<ClassName>Main</ClassName>
+			<ItemName>payment2</ItemName>
+		</SourceEmbeddedObjectReference>
+		<SourceConnectableItemReference>
+			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+			<ClassName>Delay</ClassName>
+			<ItemName>in</ItemName>
+		</SourceConnectableItemReference>
+		<TargetEmbeddedObjectReference>
+			<PackageName>hybrid</PackageName>
+			<ClassName>Main</ClassName>
+			<ItemName>queue3</ItemName>
+		</TargetEmbeddedObjectReference>
+		<TargetConnectableItemReference>
+			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+			<ClassName>Queue</ClassName>
+			<ItemName>out</ItemName>
+		</TargetConnectableItemReference>
+		<Points>
+			<Point>
+				<X>620</X>
+				<Y>220</Y>
+			</Point>
+			<Point>
+				<X>480</X>
+				<Y>220</Y>
+			</Point>
+		</Points>
+	</Connector>
+	<Connector>
+		<Id>1767107526972</Id>
+		<Name><![CDATA[connector14]]></Name>
+		<X>610</X>
+		<Y>560</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<SourceEmbeddedObjectReference>
+			<PackageName>hybrid</PackageName>
+			<ClassName>Main</ClassName>
+			<ItemName>sink4</ItemName>
+		</SourceEmbeddedObjectReference>
+		<SourceConnectableItemReference>
+			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+			<ClassName>Sink</ClassName>
+			<ItemName>in</ItemName>
+		</SourceConnectableItemReference>
+		<TargetEmbeddedObjectReference>
+			<PackageName>hybrid</PackageName>
+			<ClassName>Main</ClassName>
+			<ItemName>service3</ItemName>
+		</TargetEmbeddedObjectReference>
+		<TargetConnectableItemReference>
+			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+			<ClassName>Delay</ClassName>
+			<ItemName>out</ItemName>
+		</TargetConnectableItemReference>
+		<Points>
+			<Point>
+				<X>880</X>
+				<Y>220</Y>
+			</Point>
+			<Point>
+				<X>660</X>
+				<Y>220</Y>
+			</Point>
+		</Points>
+	</Connector>
+	<Connector>
+		<Id>1767107526974</Id>
+		<Name><![CDATA[connector15]]></Name>
+		<X>610</X>
+		<Y>560</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<SourceEmbeddedObjectReference>
+			<PackageName>hybrid</PackageName>
+			<ClassName>Main</ClassName>
+			<ItemName>service3</ItemName>
+		</SourceEmbeddedObjectReference>
+		<SourceConnectableItemReference>
+			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+			<ClassName>Delay</ClassName>
+			<ItemName>in</ItemName>
+		</SourceConnectableItemReference>
+		<TargetEmbeddedObjectReference>
+			<PackageName>hybrid</PackageName>
+			<ClassName>Main</ClassName>
+			<ItemName>queue4</ItemName>
+		</TargetEmbeddedObjectReference>
+		<TargetConnectableItemReference>
+			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+			<ClassName>Queue</ClassName>
+			<ItemName>out</ItemName>
+		</TargetConnectableItemReference>
+		<Points>
+			<Point>
+				<X>620</X>
+				<Y>220</Y>
+			</Point>
+			<Point>
+				<X>480</X>
+				<Y>220</Y>
+			</Point>
+		</Points>
+	</Connector>
+	<Connector>
+		<Id>1767107526978</Id>
+		<Name><![CDATA[connector17]]></Name>
+		<X>610</X>
+		<Y>690</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<SourceEmbeddedObjectReference>
+			<PackageName>hybrid</PackageName>
+			<ClassName>Main</ClassName>
+			<ItemName>sink5</ItemName>
+		</SourceEmbeddedObjectReference>
+		<SourceConnectableItemReference>
+			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+			<ClassName>Sink</ClassName>
+			<ItemName>in</ItemName>
+		</SourceConnectableItemReference>
+		<TargetEmbeddedObjectReference>
+			<PackageName>hybrid</PackageName>
+			<ClassName>Main</ClassName>
+			<ItemName>payment3</ItemName>
+		</TargetEmbeddedObjectReference>
+		<TargetConnectableItemReference>
+			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+			<ClassName>Delay</ClassName>
+			<ItemName>out</ItemName>
+		</TargetConnectableItemReference>
+		<Points>
+			<Point>
+				<X>880</X>
+				<Y>220</Y>
+			</Point>
+			<Point>
+				<X>660</X>
+				<Y>220</Y>
+			</Point>
+		</Points>
+	</Connector>
+	<Connector>
+		<Id>1767107526980</Id>
+		<Name><![CDATA[connector18]]></Name>
+		<X>610</X>
+		<Y>690</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<SourceEmbeddedObjectReference>
+			<PackageName>hybrid</PackageName>
+			<ClassName>Main</ClassName>
+			<ItemName>payment3</ItemName>
+		</SourceEmbeddedObjectReference>
+		<SourceConnectableItemReference>
+			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+			<ClassName>Delay</ClassName>
+			<ItemName>in</ItemName>
+		</SourceConnectableItemReference>
+		<TargetEmbeddedObjectReference>
+			<PackageName>hybrid</PackageName>
+			<ClassName>Main</ClassName>
+			<ItemName>queue5</ItemName>
+		</TargetEmbeddedObjectReference>
+		<TargetConnectableItemReference>
+			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+			<ClassName>Queue</ClassName>
+			<ItemName>out</ItemName>
+		</TargetConnectableItemReference>
+		<Points>
+			<Point>
+				<X>620</X>
+				<Y>220</Y>
+			</Point>
+			<Point>
+				<X>480</X>
+				<Y>220</Y>
+			</Point>
+		</Points>
+	</Connector>
+	<Connector>
+		<Id>1767107580112</Id>
+		<Name><![CDATA[connector11]]></Name>
+		<X>910</X>
+		<Y>660</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<SourceEmbeddedObjectReference>
+			<PackageName>hybrid</PackageName>
+			<ClassName>Main</ClassName>
+			<ItemName>selectOutput5</ItemName>
+		</SourceEmbeddedObjectReference>
+		<SourceConnectableItemReference>
+			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+			<ClassName>SelectOutput5</ClassName>
+			<ItemName>in</ItemName>
+		</SourceConnectableItemReference>
+		<TargetEmbeddedObjectReference>
+			<PackageName>hybrid</PackageName>
+			<ClassName>Main</ClassName>
+			<ItemName>source1</ItemName>
+		</TargetEmbeddedObjectReference>
+		<TargetConnectableItemReference>
+			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+			<ClassName>Source</ClassName>
+			<ItemName>out</ItemName>
+		</TargetConnectableItemReference>
+		<Points>
+			<Point>
+				<X>0</X>
+				<Y>0</Y>
+			</Point>
+			<Point>
+				<X>-90</X>
+				<Y>0</Y>
+			</Point>
+		</Points>
+	</Connector>
+	<Connector>
+		<Id>1767107590436</Id>
+		<Name><![CDATA[connector16]]></Name>
+		<X>930</X>
+		<Y>660</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<SourceEmbeddedObjectReference>
+			<PackageName>hybrid</PackageName>
+			<ClassName>Main</ClassName>
+			<ItemName>selectOutput5</ItemName>
+		</SourceEmbeddedObjectReference>
+		<SourceConnectableItemReference>
+			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+			<ClassName>SelectOutput5</ClassName>
+			<ItemName>out1</ItemName>
+		</SourceConnectableItemReference>
+		<TargetEmbeddedObjectReference>
+			<PackageName>hybrid</PackageName>
+			<ClassName>Main</ClassName>
+			<ItemName>queue3</ItemName>
+		</TargetEmbeddedObjectReference>
+		<TargetConnectableItemReference>
+			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+			<ClassName>Queue</ClassName>
+			<ItemName>in</ItemName>
+		</TargetConnectableItemReference>
+		<Points>
+			<Point>
+				<X>0</X>
+				<Y>0</Y>
+			</Point>
+			<Point>
+				<X>110</X>
+				<Y>0</Y>
+			</Point>
+		</Points>
+	</Connector>
+	<Connector>
+		<Id>1767107678541</Id>
+		<Name><![CDATA[connector19]]></Name>
+		<X>930</X>
+		<Y>680</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<SourceEmbeddedObjectReference>
+			<PackageName>hybrid</PackageName>
+			<ClassName>Main</ClassName>
+			<ItemName>selectOutput5</ItemName>
+		</SourceEmbeddedObjectReference>
+		<SourceConnectableItemReference>
+			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+			<ClassName>SelectOutput5</ClassName>
+			<ItemName>out2</ItemName>
+		</SourceConnectableItemReference>
+		<TargetEmbeddedObjectReference>
+			<PackageName>hybrid</PackageName>
+			<ClassName>Main</ClassName>
+			<ItemName>queue4</ItemName>
+		</TargetEmbeddedObjectReference>
+		<TargetConnectableItemReference>
+			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+			<ClassName>Queue</ClassName>
+			<ItemName>in</ItemName>
+		</TargetConnectableItemReference>
+		<Points>
+			<Point>
+				<X>0</X>
+				<Y>0</Y>
+			</Point>
+			<Point>
+				<X>60</X>
+				<Y>0</Y>
+			</Point>
+			<Point>
+				<X>60</X>
+				<Y>100</Y>
+			</Point>
+			<Point>
+				<X>120</X>
+				<Y>100</Y>
+			</Point>
+		</Points>
+	</Connector>
+	<Connector>
+		<Id>1767107690285</Id>
+		<Name><![CDATA[connector20]]></Name>
+		<X>930</X>
+		<Y>740</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<SourceEmbeddedObjectReference>
+			<PackageName>hybrid</PackageName>
+			<ClassName>Main</ClassName>
+			<ItemName>selectOutput5</ItemName>
+		</SourceEmbeddedObjectReference>
+		<SourceConnectableItemReference>
+			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+			<ClassName>SelectOutput5</ClassName>
+			<ItemName>out5</ItemName>
+		</SourceConnectableItemReference>
+		<TargetEmbeddedObjectReference>
+			<PackageName>hybrid</PackageName>
+			<ClassName>Main</ClassName>
+			<ItemName>queue5</ItemName>
+		</TargetEmbeddedObjectReference>
+		<TargetConnectableItemReference>
+			<PackageName>com.anylogic.libraries.processmodeling</PackageName>
+			<ClassName>Queue</ClassName>
+			<ItemName>in</ItemName>
+		</TargetConnectableItemReference>
+		<Points>
+			<Point>
+				<X>0</X>
+				<Y>0</Y>
+			</Point>
+			<Point>
+				<X>30</X>
+				<Y>0</Y>
+			</Point>
+			<Point>
+				<X>30</X>
+				<Y>170</Y>
+			</Point>
+			<Point>
+				<X>120</X>
+				<Y>170</Y>
 			</Point>
 		</Points>
 	</Connector>
